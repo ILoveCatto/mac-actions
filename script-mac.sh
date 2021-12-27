@@ -1,11 +1,6 @@
 # disable spotlight indexing
 sudo mdutil -i off -a
 
-# Install podman
-brew install podman
-podman machine init
-podman machine start
-
 # Create new user to get access to root
 sudo dscl . -create /Users/ci
 sudo dscl . -create /Users/ci UserShell /bin/zsh
